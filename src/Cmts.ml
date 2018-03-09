@@ -20,7 +20,7 @@ open Parsetree
     whenever 2 intervals share more than an end-point, then one contains the
     other. *)
 module Non_overlapping_interval_tree (Itv : sig
-  include Hashtbl_intf.Key
+  include Hashtbl.Key
 
   val contains : t -> t -> bool
 
